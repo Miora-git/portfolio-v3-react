@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
   <body>
@@ -21,7 +26,18 @@
         <a href="#skill">Skill</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <button class="menu">
+        <i class="fa-solid fa-ellipsis"></i>
+      </button>
     </header>
+
+    <div class="menu-bar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skill">Skill</a>
+      <a href="#contact">Contact</a>
+    </div>
 
     <section class="home" id="home">
       <div class="home-content">
@@ -46,6 +62,7 @@
         </div>
         <div><a href="#" class="btn-box"> More About Me</a></div>
       </div>
+
       <div class="home-img">
         <div class="img-box">
           <div class="img-item">
@@ -74,9 +91,9 @@
           <p>
             I believe that technology is a powerful tool for creating meaningful
             solutions, which drives my constant passion for learning and
-            exploring new ideas. As a collaborative and approachable
-            individual, I value teamwork and thrive in environments where I can
-            lead, listen, and connect with other.
+            exploring new ideas. As a collaborative and approachable individual,
+            I value teamwork and thrive in environments where I can lead,
+            listen, and connect with other.
           </p>
           <br />
           <p>
@@ -177,31 +194,39 @@
     <div class="container2">
       <h1 class="heading2"><i>Languages</i></h1>
       <div class="radial-bars">
+        <div class="lang-summary" style="height: 100%">
+          <div class="text">Malagasy</div>
+          <div class="percentage">80%</div>
+          <p>Native</p>
+        </div>
         <img src="./img/madagascar.png" alt="" />
-        <div class="percentage">80%</div>
-        <div class="text">Malagasy</div>
-        <p>Native</p>
       </div>
 
       <div class="radial-bars">
+        <div class="lang-summary">
+          <div class="text">English</div>
+          <div class="percentage">65%</div>
+          <p>Fluent</p>
+        </div>
         <img src="./img/english.png" alt="" />
-        <div class="percentage">65%</div>
-        <div class="text">English</div>
-        <p>Fluent</p>
       </div>
 
       <div class="radial-bars">
+        <div class="lang-summary">
+          <div class="text">French</div>
+          <div class="percentage">50%</div>
+          <p>Intermediate</p>
+        </div>
         <img src="./img/french.png" alt="" />
-        <div class="percentage">50%</div>
-        <div class="text">French</div>
-        <p>Intermediate</p>
       </div>
 
       <div class="radial-bars">
+        <div class="lang-summary">
+          <div class="text">German</div>
+          <div class="percentage">40%</div>
+          <p>Beginner</p>
+        </div>
         <img src="./img/german.png" alt="" />
-        <div class="percentage">40%</div>
-        <div class="text">German</div>
-        <p>Beginner</p>
       </div>
     </div>
 
@@ -253,5 +278,7 @@
         <input type="submit" value="submit" class="send" />
       </form>
     </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>
