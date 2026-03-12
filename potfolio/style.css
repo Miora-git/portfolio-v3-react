@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -39,7 +39,6 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 35px;
   transition: -3s;
 }
 .navbar a:hover {
@@ -57,8 +56,8 @@ body {
   align-items: center;
   padding: 70px 10% 0;
 }
-.home span{
-  color: #0cf
+.home span {
+  color: #0cf;
 }
 
 .home-content {
@@ -120,17 +119,22 @@ body {
     0 0 100px cyan,
     0 0 200px cyan;
 }
+
+.navbar {
+  gap: 1.5rem;
+  display: flex;
+}
+
 .navbar a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: px;
   height: 40px;
   background: transparent;
   font-size: 20px;
   color: #0cf;
   text-decoration: none;
-  margin: 30px 15px 30px 0;
+  padding: 0.5rem;
 }
 .navbar a:hover {
   background: #0cf;
@@ -191,6 +195,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   height: 500px;
+  padding: 14px;
   gap: 1.5rem;
 }
 .about-text h3 {
@@ -212,7 +217,7 @@ body {
   line-height: 1.4;
   margin-bottom: 4rem;
 }
-.read{
+.read {
   display: inline-block;
   padding: 12px 28px;
   background: #0cf;
@@ -223,16 +228,16 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
-.read:hover{
-box-shadow:
+.read:hover {
+  box-shadow:
     0 0 5px cyan,
     0 0 25px cyan,
     0 0 50px cyan,
     0 0 100px cyan,
     0 0 200px cyan;
 }
-.services-list span{
-   color: #0cf; 
+.services-list span {
+  color: #0cf;
 }
 .sub-title {
   text-align: center;
@@ -243,7 +248,7 @@ box-shadow:
   color: #0cf;
 }
 .container {
-  padding: 90px;
+  padding: 50px;
   text-align: center;
 }
 .services-list {
@@ -349,7 +354,7 @@ box-shadow:
   text-align: center;
   font-size: 50px;
   padding-bottom: 50px;
-  margin-top: 150px;
+  margin-top: 80px;
 }
 .container2 {
   display: grid;
@@ -357,8 +362,7 @@ box-shadow:
   width: 600px;
   margin-left: auto;
   margin-right: auto;
-  gap: 16px;
-  margin-top: 40px 0;
+  gap: 24px;
 
   h1 {
     grid-column: span 2;
@@ -374,7 +378,7 @@ box-shadow:
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-thickness: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 24px;
 }
 .bar {
   font-size: 23px;
@@ -419,10 +423,16 @@ box-shadow:
 
 .radial-bars {
   width: 100%;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+}
+
+.lang-summary {
+  height: 100%;
+  width: 100px;
 }
 
 .radial-bars img {
@@ -516,6 +526,7 @@ box-shadow:
 
 .education h1 {
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .education .education-list {
@@ -528,7 +539,6 @@ box-shadow:
 
 .education .education-list div {
   width: 250px;
-  height: 300px;
   border-radius: 6px;
   display: flex;
   justify-content: center;
@@ -545,4 +555,48 @@ box-shadow:
 .education .education-list div p {
   margin-top: 8px;
   text-align: center;
+}
+
+.education .education-list div li {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.menu {
+  display: none;
+  background-color: transparent;
+  color: #00abf0;
+  font-size: 24px;
+  border: none;
+}
+
+.menu-bar {
+  position: fixed;
+  right: 0;
+  top: 68px;
+  transform: translateX(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(50% - 68px);
+  transition: 0.5s;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 20px;
+  width: 350px;
+  background-color: #ffffff3c;
+  backdrop-filter: blur(2px);
+  z-index: 1000;
+  gap: 2rem;
+  font-size: 20px;
+  font-weight: bold;
+
+  a {
+    color: #00abf0;
+  }
+}
+
+.menu-bar.active {
+  transform: translateX(0);
 }
